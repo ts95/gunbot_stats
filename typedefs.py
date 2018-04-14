@@ -14,3 +14,15 @@ class Order:
         self.price = float(csv_row[6])
         self.opened = datetime.strptime(csv_row[7], date_format)
         self.closed = datetime.strptime(csv_row[8], date_format)
+
+    def __str__(self):
+        return '\n'.join([
+            f"{self.exchange} {self.type}",
+            f"Quantity:\t{self.quantity}",
+            f"Limit:\t\t{self.limit}",
+            f"Comission paid:\t{self.comission_paid}",
+            f"Price:\t\t{self.price}",
+            f"Opened:\t\t{self.opened}",
+            f"Closed:\t\t{self.closed}",
+            ""
+        ])

@@ -21,4 +21,4 @@ After installing new dependencies, run `pip freeze > requirements.txt` to persis
 
 ## Running
 `source venv/bin/activate` to activate the virtualenv.<br>
-`python3 main.py` to run the script.
+`python3 main.py [fullOrders.csv]` to run the script.
